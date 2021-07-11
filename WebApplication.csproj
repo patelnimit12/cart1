@@ -1,0 +1,377 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4BBBA6DB-CF97-48C6-A30F-F1F0EB1FE24D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication</RootNamespace>
+    <AssemblyName>WebApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44324</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\CategoryMst.aspx" />
+    <Content Include="Admin\css\animate.min.css" />
+    <Content Include="Admin\css\bootstrap.min.css" />
+    <Content Include="Admin\css\jquery-ui.css" />
+    <Content Include="Admin\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="Admin\css\meanmenu.css" />
+    <Content Include="Admin\css\nice-select.css" />
+    <Content Include="Admin\css\normalize.css" />
+    <Content Include="Admin\css\owl.carousel.min.css" />
+    <Content Include="Admin\css\responsive.css" />
+    <Content Include="Admin\css\slick.css" />
+    <Content Include="Admin\css\style.css" />
+    <Content Include="Admin\icon\icon_b.png" />
+    <Content Include="Admin\images\about.jpg" />
+    <Content Include="Admin\images\banner2.png" />
+    <Content Include="Admin\images\crros.png" />
+    <Content Include="Admin\images\img2.png" />
+    <Content Include="Admin\images\loading.gif" />
+    <Content Include="Admin\images\logo.png" />
+    <Content Include="Admin\images\logo2.png" />
+    <Content Include="Admin\images\tes.jpg" />
+    <Content Include="Admin\images\test.png" />
+    <Content Include="Admin\images\test_con.png" />
+    <Content Include="Admin\images\v1.jpg" />
+    <Content Include="Admin\images\v2.jpg" />
+    <Content Include="Admin\js\bootstrap.bundle.min.js" />
+    <Content Include="Admin\js\custom.js" />
+    <Content Include="Admin\js\jquery-3.0.0.min.js" />
+    <Content Include="Admin\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Admin\js\jquery.min.js" />
+    <Content Include="Admin\js\jquery.validate.js" />
+    <Content Include="Admin\js\plugin.js" />
+    <Content Include="Admin\js\popper.min.js" />
+    <Content Include="Admin\Report1.aspx" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="css\meanmenu.css" />
+    <Content Include="css\nice-select.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\slick.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Date.aspx" />
+    <Content Include="icon\icon_b.png" />
+    <Content Include="images\about.jpg" />
+    <Content Include="images\banner2.png" />
+    <Content Include="images\crros.png" />
+    <Content Include="images\img2.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo2.png" />
+    <Content Include="images\tes.jpg" />
+    <Content Include="images\test.png" />
+    <Content Include="images\test_con.png" />
+    <Content Include="images\v1.jpg" />
+    <Content Include="images\v2.jpg" />
+    <Content Include="JScript.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\jquery-3.0.0.min.js" />
+    <Content Include="js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.validate.js" />
+    <Content Include="js\plugin.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="UserSite\BuyMst.aspx" />
+    <Content Include="Admin\CityMst.aspx" />
+    <Content Include="Admin\ItemMst.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="UserSite\css\animate.min.css" />
+    <Content Include="UserSite\css\bootstrap.min.css" />
+    <Content Include="UserSite\css\jquery-ui.css" />
+    <Content Include="UserSite\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="UserSite\css\meanmenu.css" />
+    <Content Include="UserSite\css\nice-select.css" />
+    <Content Include="UserSite\css\normalize.css" />
+    <Content Include="UserSite\css\owl.carousel.min.css" />
+    <Content Include="UserSite\css\responsive.css" />
+    <Content Include="UserSite\css\slick.css" />
+    <Content Include="UserSite\css\style.css" />
+    <Content Include="UserSite\icon\icon_b.png" />
+    <Content Include="UserSite\images\about.jpg" />
+    <Content Include="UserSite\images\banner2.png" />
+    <Content Include="UserSite\images\crros.png" />
+    <Content Include="UserSite\images\img2.png" />
+    <Content Include="UserSite\images\loading.gif" />
+    <Content Include="UserSite\images\logo.png" />
+    <Content Include="UserSite\images\logo2.png" />
+    <Content Include="UserSite\images\tes.jpg" />
+    <Content Include="UserSite\images\test.png" />
+    <Content Include="UserSite\images\test_con.png" />
+    <Content Include="UserSite\images\v1.jpg" />
+    <Content Include="UserSite\images\v2.jpg" />
+    <Content Include="UserSite\js\bootstrap.bundle.min.js" />
+    <Content Include="UserSite\js\custom.js" />
+    <Content Include="UserSite\js\jquery-3.0.0.min.js" />
+    <Content Include="UserSite\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="UserSite\js\jquery.min.js" />
+    <Content Include="UserSite\js\jquery.validate.js" />
+    <Content Include="UserSite\js\plugin.js" />
+    <Content Include="UserSite\js\popper.min.js" />
+    <Content Include="UserSite\PaymentMst.aspx" />
+    <Content Include="Admin\StateMst.aspx" />
+    <Content Include="Admin\SubCategoryMst.aspx" />
+    <Content Include="UserMst.aspx" />
+    <Content Include="UserSite\Home.aspx" />
+    <Content Include="UserSite\Report.aspx" />
+    <Content Include="UserSite\ViewItem.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\CategoryMst.aspx.cs">
+      <DependentUpon>CategoryMst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CategoryMst.aspx.designer.cs">
+      <DependentUpon>CategoryMst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Report1.aspx.cs">
+      <DependentUpon>Report1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Report1.aspx.designer.cs">
+      <DependentUpon>Report1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Date.aspx.cs">
+      <DependentUpon>Date.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Date.aspx.designer.cs">
+      <DependentUpon>Date.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserSite\BuyMst.aspx.cs">
+      <DependentUpon>BuyMst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSite\BuyMst.aspx.designer.cs">
+      <DependentUpon>BuyMst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CityMst.aspx.cs">
+      <DependentUpon>CityMst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CityMst.aspx.designer.cs">
+      <DependentUpon>CityMst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Admin\ItemMst.aspx.cs">
+      <DependentUpon>ItemMst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ItemMst.aspx.designer.cs">
+      <DependentUpon>ItemMst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserSite\PaymentMst.aspx.cs">
+      <DependentUpon>PaymentMst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSite\PaymentMst.aspx.designer.cs">
+      <DependentUpon>PaymentMst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Admin\StateMst.aspx.cs">
+      <DependentUpon>StateMst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StateMst.aspx.designer.cs">
+      <DependentUpon>StateMst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SubCategoryMst.aspx.cs">
+      <DependentUpon>SubCategoryMst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SubCategoryMst.aspx.designer.cs">
+      <DependentUpon>SubCategoryMst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserMst.aspx.cs">
+      <DependentUpon>UserMst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserMst.aspx.designer.cs">
+      <DependentUpon>UserMst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserSite\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSite\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserSite\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSite\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserSite\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSite\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserSite\ViewItem.aspx.cs">
+      <DependentUpon>ViewItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSite\ViewItem.aspx.designer.cs">
+      <DependentUpon>ViewItem.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Site1.Master" />
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="UserSite\Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\img\" />
+    <Folder Include="img\" />
+    <Folder Include="UserSite\img\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49971</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44324/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
